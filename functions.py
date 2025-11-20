@@ -4,14 +4,14 @@ import parameters as P
 
 def vanderpol1(t, y):
     y1dot = y[1]
-    y2dot = P.u[0] * (1 - y[0] ** 2) * y[1] - y[0]
+    y2dot = (P.u[0] * (1 - y[0] ** 2) * y[1]) - y[0]
     return y1dot, y2dot
 def vanderpol500(t, y):
     y1dot = y[1]
-    y2dot = P.u[1] * (1 - y[0] ** 2) * y[1] - y[0]
+    y2dot = (P.u[1] * (1 - y[0] ** 2) * y[1]) - y[0]
     return y1dot, y2dot
 def belousov(t, y):
-    y1dot = 77.27 * (y[1] - y[0] * y[1] + y[0] - 8.375 * (10 ** (-6)) * y[0] **2)
+    y1dot = 77.27 * (y[1] - y[0] * y[1] + y[0] - 8.375 * (10 ** (-6)) * (y[0] **2))
     y2dot = (-y[1] - y[0] * y[1] + y[2]) / 77.27
     y3dot = 0.161 * (y[0] - y[2])
     return y1dot, y2dot, y3dot

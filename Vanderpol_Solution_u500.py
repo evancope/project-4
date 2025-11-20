@@ -33,7 +33,7 @@ plt.plot(t45, y1_values45,\
           label = 'y1', color = 'red')
 plt.plot(t45, y2_values45,\
           label = 'y2', color = 'green')
-plt.title('RK45 phase plot vanderpol function u = 1')
+plt.title('RK45 solution to vanderpol function u = 500')
 plt.legend()
 plt.grid()
 plt.show()
@@ -42,7 +42,7 @@ plt.figure()
 plt.plot(y1_values45,y2_values45,\
           label = '', color = 'red')
 
-plt.title('RK45 phase plot for vanderpol function u = 1')
+plt.title('RK45 phase plot for vanderpol function u = 500')
 plt.legend()
 plt.grid()
 plt.show()
@@ -66,7 +66,7 @@ plt.plot(t113, y1_values113,\
           label = 'y1', color = 'red')
 plt.plot(t113, y2_values113,\
           label = 'y2', color = 'green')
-plt.title('ODE113 solution to vanderpol function u = 1')
+plt.title('ODE113 solution to vanderpol function u = 500')
 plt.legend()
 plt.grid()
 plt.show()
@@ -75,7 +75,7 @@ plt.figure()
 plt.plot(y1_values113,y2_values113,\
           label = '', color = 'red')
 
-plt.title('ODE113 phase plot for vanderpol function u = 1')
+plt.title('ODE113 phase plot for vanderpol function u = 500')
 plt.legend()
 plt.grid()
 plt.show()
@@ -99,7 +99,7 @@ plt.plot(t15s, y1_values15s,\
           label = 'y1', color = 'red')
 plt.plot(t15s, y2_values15s,\
           label = 'y2', color = 'green')
-plt.title('BDF solution to vanderpol function u = 1')
+plt.title('BDF solution to vanderpol function u = 500')
 plt.legend()
 plt.grid()
 plt.show()
@@ -108,7 +108,7 @@ plt.figure()
 plt.plot(y1_values15s,y2_values15s,\
           label = '', color = 'red')
 
-plt.title('BDF phase plot for vanderpol function u = 1')
+plt.title('BDF phase plot for vanderpol function u = 500')
 plt.legend()
 plt.grid()
 plt.show()
