@@ -21,7 +21,6 @@ y2_values45 = [y0[1]]
 y3_values45 = [y0[2]]
 #Get solution for RK45
 start45 = time.process_time()
-s = 0
 while solution45.status == 'running':
     solution45.step()
     t45.append(solution45.t)
