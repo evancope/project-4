@@ -38,3 +38,8 @@ def cartesian(theta, phi):
         y.append(- P.l * (np.cos(theta[i]) + np.cos(phi[i])))
         x.append(P.l * (np.sin(theta[i]) + np.sin(phi[i])))
     return x, y
+
+def append_to_file(my_list, filename):
+    with open(filename, 'a') as file:
+        for item in my_list:
+            file.write(f"{item}\n")
