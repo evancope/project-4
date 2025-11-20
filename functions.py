@@ -15,9 +15,9 @@ def belousov(t, y):
     y2dot = (-y[1] - y[0] * y[1] + y[2]) / 77.27
     y3dot = 0.161 * (y[0] - y[2])
     return y1dot, y2dot, y3dot
-def houwen(t, y1, y2):
-    y1dot = 0.2 * (y2 - y1)
-    y2dot = 10 * y1 - (60 - 0.125 * t) * y2 + 0.125 * t
+def houwen(t, y):
+    y1dot = 0.2 * (y[1] - y[0])
+    y2dot = 10 * y[0] - (60 - 0.125 * t) * y[1] + 0.125 * t
     return y1dot, y2dot
 def ddp(t, y1, y2, y3, y4):
     C = np.cos(y1 - y3)
